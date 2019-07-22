@@ -255,7 +255,7 @@ class Game:
 
          while True:
             self.screen.fill(BLACK)
-            draw_text(self.screen,"looks like you failed",60,WIDTH//2,250)
+            draw_text(self.screen,"looks like you failed!!!",60,WIDTH//2,250)
             draw_text(self.screen,"Yyour score was {} while your high score is {} ".format(len(self.player),self.highscore),60,WIDTH//2,HEIGHT//2+100)
             pg.display.update()
             for event in pg.event.get():
@@ -271,7 +271,6 @@ class Game:
                         self.highscore=0
                         self.fruitwithd=32
                         self.nowalls=[]
-
                         return None
 pygame.mixer.init()
 snd_dir = path.join(path.dirname(__file__), 'snd')
